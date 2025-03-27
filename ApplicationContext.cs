@@ -3,6 +3,7 @@
 namespace LB1
 {
     //Контекст предназначен для подключения к базе данных
+    //и работы с таблицами
     internal class ApplicationContext: DbContext
     {
         //Свойство Users позволяет контексту работать с таблицей Users
