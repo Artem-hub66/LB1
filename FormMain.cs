@@ -12,7 +12,12 @@ namespace LB1
             using (ApplicationContext db = new ApplicationContext())
             {
                 var users = db.Users.ToList();
+                labelUsers.Text = "Список пользователей:";
 
+                foreach (User u in users)
+                {
+                    labelinAboutUsers.Text += ($"{u.Id}. {u.Name} - {u.Age}\n");
+                }
             }
         }
     }
